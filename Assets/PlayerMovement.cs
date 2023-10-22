@@ -5,14 +5,17 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]
-    private float Speed;
+    
+    public float Speed = 5f;
     public float input1;
-    public float TurningSpeed = 1f;
+    
+    public float TurningSpeed = 500;
+
+    Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -26,6 +29,16 @@ public class PlayerMovement : MonoBehaviour
         Direction.Normalize();
 
         transform.Translate(Direction * Speed * Magnitude * Time.deltaTime, Space.World);
+
+        //This allows the player to rotate
+        if (Direction != Vector2.zero)
+        {
+            Quaternion Rotation = Quaternion.LookRotation(transform.forward, Direction);
+            Quaternion MoveRotation = transform.rotation = Quaternion.RotateTowards(transform.rotation, Rotation, TurningSpeed * Time.deltaTime);
+
+            rb.MoveRotation(MoveRotation);
+        }
     }
+
 
 }
