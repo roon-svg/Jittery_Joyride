@@ -11,5 +11,11 @@ public class MainMenu : MonoBehaviour
         // In the line above, we add the scene of the game, the first level where the game begins.
 
     }
+    
+    public void Quitgame()
+    {
+        Application.Quit();
+    }
+
 
 }
