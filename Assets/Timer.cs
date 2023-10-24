@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI countdownText;
 
-    public float currentTime = 0f;
+    // public float currentTime = 0f;
     
     // Start is called before the first frame update
     void Start()
@@ -22,12 +22,25 @@ public class Timer : MonoBehaviour
     // This allows the countdown timer to work.
     void Update()
     {
-        currentTime -= Time.deltaTime;
-        countdownText.text = currentTime.ToString();
 
-        if (currentTime == 0)
+    }
+    public void StartStopwatch(float currentTime, bool countdownTimerStart)
+    {
+        void Update()
         {
-            //OnApplicationQuit();
+            currentTime -= Time.deltaTime;
+            countdownText.text = currentTime.ToString();
+
+            if (currentTime == 0)
+            {
+                //OnApplicationQuit();
+            }
+            else if (countdownTimerStart == true)
+            {
+                return; // This will exit this method(this being the Update() method.)
+            }
+
         }
+        // return currentTime;
     }
 }

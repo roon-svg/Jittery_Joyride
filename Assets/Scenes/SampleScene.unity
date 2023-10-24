@@ -394,6 +394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1113576094}
+  - component: {fileID: 1113576095}
   m_Layer: 0
   m_Name: CheckPoint
   m_TagString: Untagged
@@ -418,6 +419,18 @@ Transform:
   - {fileID: 1640146014}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1113576095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113576093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b3e72f076572747b9b07adb8a1dce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1640146013
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,7 +776,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownText: {fileID: 1964607591}
-  currentTime: 30
 --- !u!114 &1964607591
 MonoBehaviour:
   m_ObjectHideFlags: 0
