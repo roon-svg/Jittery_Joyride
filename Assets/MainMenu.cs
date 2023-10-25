@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
     public void Quitgame()
     {
         Application.Quit();
+        // Once game is created we will be able to quit it.
     }
 
 
