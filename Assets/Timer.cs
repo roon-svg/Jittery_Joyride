@@ -8,39 +8,42 @@ using Unity.VisualScripting;
 
 public class Timer : MonoBehaviour
 {
-    public TextMeshProUGUI countdownText;
+    Starter starter;
+    [SerializeField] GameObject StartCheckpoint;
+    Ender ender;
+    [SerializeField] GameObject EndCheckpoint;
 
+    public TextMeshProUGUI countdownText;
+    Starter startCountdown;
+    Ender endCountdown;
     // public float currentTime = 0f;
-    
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        starter = StartCheckpoint.GetComponent<Starter>();
+        ender = EndCheckpoint.GetComponent<Ender>();
     }
 
     // Update is called once per frame
     // This allows the countdown timer to work.
+    
     void Update()
     {
-
-    }
-    public void StartStopwatch(float currentTime, bool countdownTimerStart)
-    {
-        void Update()
+        if (starter.countdownTimerStart == true || ender.countdownTimerStart == true )
         {
-            currentTime -= Time.deltaTime;
-            countdownText.text = currentTime.ToString();
+            starter.currentTime -= Time.deltaTime;
+            countdownText.text = startCountdown.currentTime.ToString();
 
-            if (currentTime == 0)
+            if (starter.currentTime == 0)
             {
                 //OnApplicationQuit();
             }
-            else if (countdownTimerStart == true)
-            {
-                return; // This will exit this method(this being the Update() method.)
-            }
-
         }
-        // return currentTime;
+        else if (ender.countdownTimerStart == false)
+        {
+            return;
+        }
     }
+    
 }
