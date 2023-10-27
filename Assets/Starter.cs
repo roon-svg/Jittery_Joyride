@@ -9,7 +9,6 @@ public class Starter : MonoBehaviour
     // Start is called before the first frame update
     public bool countdownTimerStart;
     public float currentTime;
-    public int touch = 0;
     void Start()
     {
         
@@ -20,10 +19,12 @@ public class Starter : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter2D(Collider2D StartCheckpoint)
+    void OnTriggerEnter(Collider EndCheckpoint)
     {
         countdownTimerStart = true;
-        currentTime = 30f;
-        touch += 1;
+        if (EndCheckpoint.CompareTag("Player"))
+        {
+            currentTime = 30f;
+        }
     }
 }

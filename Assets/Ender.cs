@@ -6,15 +6,11 @@ public class Ender : MonoBehaviour
 {
     Timer timer;
     // Start is called before the first frame update
-    // public bool countdownTimerStart;
+    public bool countdownTimerStart;
     public float currentTime;
-    private int n = 0;
-
-    Starter starter;
-    [SerializeField] GameObject StartCheckpoint;
     void Start()
     {
-        starter = StartCheckpoint.GetComponent<Starter>();
+        
     }
 
     // Update is called once per frame
@@ -22,16 +18,12 @@ public class Ender : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter2D(Collider2D EndCheckpoint)
+    void OnTriggerEnter(Collider StartCheckpoint)
     {
-        starter.countdownTimerStart = false;
-        //starter.touch += 1;
-        Debug.Log("Timer Paused");
-        /*
-        if (starter.touch == 2*n+2)
+        countdownTimerStart = false;
+        if (StartCheckpoint.CompareTag("Player"))
         {
-            countdownTimerStart = false;
+            currentTime = 30f;
         }
-        */
     }
 }
