@@ -7,7 +7,7 @@ public class Camerafollow : MonoBehaviour
 {
     private UnityEngine.Vector3 offset = new UnityEngine.Vector3(0f, 0f, -10f);
     // This defines offset of the cameram to the player.
-    
+
     private float smoothTime = 0.25F;
     // This is the amount of time the camera will take to follow the car in the game. 
     // Using smooth time will enable the camera to follow the car smoothly.
@@ -31,3 +31,4 @@ public class Camerafollow : MonoBehaviour
 
     }
 
+}

@@ -18,11 +18,11 @@ public class Ender : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(Collider StartCheckpoint)
+    void OnTriggerEnter2D(Collider2D EndCheckpoint)
     {
-        countdownTimerStart = false;
-        if (StartCheckpoint.CompareTag("Player"))
+        if (EndCheckpoint.CompareTag("Player"))
         {
+            countdownTimerStart = false;
             currentTime = 30f;
         }
     }

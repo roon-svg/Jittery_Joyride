@@ -19,10 +19,11 @@ public class Starter : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(Collider EndCheckpoint)
+    void OnTriggerEnter2D(Collider2D StartCheckpoint)
     {
         countdownTimerStart = true;
-        if (EndCheckpoint.CompareTag("Player"))
+        currentTime = 30f;
+        if (StartCheckpoint.CompareTag("Player"))
         {
             currentTime = 30f;
         }

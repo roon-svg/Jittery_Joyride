@@ -27,23 +27,34 @@ public class Timer : MonoBehaviour
 
     // Update is called once per frame
     // This allows the countdown timer to work.
-    
+
     void Update()
     {
-        if (starter.countdownTimerStart == true || ender.countdownTimerStart == true )
+        if (starter.countdownTimerStart == true)
         {
             starter.currentTime -= Time.deltaTime;
-            countdownText.text = startCountdown.currentTime.ToString();
-
-            if (starter.currentTime == 0)
-            {
-                //OnApplicationQuit();
-            }
+            countdownText.text = starter.currentTime.ToString();
         }
         else if (ender.countdownTimerStart == false)
         {
-            return;
+            StartTimer();
+        }
+        else if (starter.currentTime < 0)
+        {
+
         }
     }
-    
+
+    void StartTimer()
+    {
+        Debug.Log("StartTimer function works");
+        return;
+    }
+
+    public void UpdateTimer()
+    {
+        float CountdownTimer = starter.currentTime -= Time.deltaTime;
+        countdownText.text = CountdownTimer.ToString();
+    }
+
 }

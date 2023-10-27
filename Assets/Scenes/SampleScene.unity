@@ -414,7 +414,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10.32012, y: -3.163343, z: 0}
-  m_LocalScale: {x: 1.0699, y: 1.0699, z: 1.0699}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -707,7 +707,7 @@ GameObject:
   - component: {fileID: 1964607591}
   - component: {fileID: 1964607590}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Countdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -872,8 +872,8 @@ Transform:
   m_GameObject: {fileID: 2100689110}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.67488, y: 3.2616572, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.3201, y: 2.9069, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
