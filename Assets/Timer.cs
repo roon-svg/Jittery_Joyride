@@ -47,6 +47,7 @@ public class Timer : MonoBehaviour
 
     void StartTimer()
     {
+        starter.countdownTimerStart = false;
         Debug.Log("StartTimer function works");
         return;
     }

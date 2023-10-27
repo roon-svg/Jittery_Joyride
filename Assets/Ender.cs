@@ -20,6 +20,7 @@ public class Ender : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D EndCheckpoint)
     {
+        countdownTimerStart = false;
         if (EndCheckpoint.CompareTag("Player"))
         {
             countdownTimerStart = false;
