@@ -518,8 +518,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9db65837513dbe41bee4ab7e1e1d8c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownTimerStart: 0
   currentTime: 0
+  countdownTimerStart: 0
+  StartCheckpoint: {fileID: 2100689110}
 --- !u!1 &1852717608
 GameObject:
   m_ObjectHideFlags: 0

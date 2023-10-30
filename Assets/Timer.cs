@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
+using System.Runtime.CompilerServices;
 
 public class Timer : MonoBehaviour
 {
@@ -14,8 +16,9 @@ public class Timer : MonoBehaviour
     [SerializeField] GameObject EndCheckpoint;
 
     public TextMeshProUGUI countdownText;
-    Starter startCountdown;
-    Ender endCountdown;
+
+
+
     // public float currentTime = 0f;
 
     // Start is called before the first frame update
@@ -30,26 +33,20 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
+
         if (starter.countdownTimerStart == true)
         {
-            starter.currentTime -= Time.deltaTime;
-            countdownText.text = starter.currentTime.ToString();
+            UpdateTimer();
         }
-        else if (ender.countdownTimerStart == false)
+        if (ender.countdownTimerStop == true)
         {
-            StartTimer();
-        }
-        else if (starter.currentTime < 0)
-        {
+            starter.countdownTimerStart = false;
 
         }
-    }
-
-    void StartTimer()
-    {
-        starter.countdownTimerStart = false;
-        Debug.Log("StartTimer function works");
-        return;
+        if (starter.currentTime < 0)
+        {
+            // SceneManager.LoadScene("GameOver");
+        }
     }
 
     public void UpdateTimer()
