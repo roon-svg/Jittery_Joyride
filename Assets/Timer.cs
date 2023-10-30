@@ -5,14 +5,14 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
+    #region variables
     Starter starter;
     [SerializeField] GameObject StartCheckpoint;
     Ender ender;
     [SerializeField] GameObject EndCheckpoint;
 
     public TextMeshProUGUI countdownText;
-
-
+    #endregion
 
     // public float currentTime = 0f;
 
