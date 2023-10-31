@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    SpeedBoost speedBoost;
+    [SerializeField] GameObject SpeedBoost;
+
     #region variables
     public float Speed = 5f;
     public float input1;
@@ -13,12 +17,16 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
     Rigidbody2D rb;
+
+    void Awake()
+    {
+        speedBoost = SpeedBoost.GetComponent<SpeedBoost>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
-        GameObject.DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
@@ -49,7 +57,18 @@ public class PlayerMovement : MonoBehaviour
             rb.MoveRotation(MoveRotation);
         }
         #endregion
+
+        if (speedBoost.boostOn == true && Input.GetKeyDown("space"))
+        {
+            transform.Translate(Direction * 50 * Magnitude * Time.deltaTime, Space.World);
+            Boost();
+            speedBoost.boostOn = false;
+        }
     }
 
+    public void Boost()
+    {
+        Speed = 10f;
+    }
 
 }
