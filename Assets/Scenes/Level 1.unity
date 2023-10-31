@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 11731977}
   - component: {fileID: 11731979}
   - component: {fileID: 11731978}
+  - component: {fileID: 11731980}
   m_Layer: 0
   m_Name: Edge1
   m_TagString: Untagged
@@ -253,6 +254,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &11731980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11731976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41f586091701f843b43f8603211b889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 462912177}
+  damage: 1
 --- !u!1 &46540407
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,6 +810,7 @@ GameObject:
   - component: {fileID: 331541644}
   - component: {fileID: 331541646}
   - component: {fileID: 331541645}
+  - component: {fileID: 331541647}
   m_Layer: 0
   m_Name: Edge2
   m_TagString: Untagged
@@ -914,6 +930,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &331541647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331541643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41f586091701f843b43f8603211b889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 462912177}
+  damage: 1
 --- !u!1 &400042263
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,6 +955,7 @@ GameObject:
   - component: {fileID: 400042264}
   - component: {fileID: 400042266}
   - component: {fileID: 400042265}
+  - component: {fileID: 400042267}
   m_Layer: 0
   m_Name: Edge4
   m_TagString: Untagged
@@ -1044,6 +1075,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &400042267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400042263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41f586091701f843b43f8603211b889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 462912177}
+  damage: 1
 --- !u!1 &423753721
 GameObject:
   m_ObjectHideFlags: 0
@@ -3065,6 +3110,7 @@ GameObject:
   - component: {fileID: 1905195949}
   - component: {fileID: 1905195951}
   - component: {fileID: 1905195950}
+  - component: {fileID: 1905195952}
   m_Layer: 0
   m_Name: Edge3
   m_TagString: Untagged
@@ -3184,6 +3230,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1905195952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905195948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41f586091701f843b43f8603211b889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 462912177}
+  damage: 1
 --- !u!1 &2034105972
 GameObject:
   m_ObjectHideFlags: 0
