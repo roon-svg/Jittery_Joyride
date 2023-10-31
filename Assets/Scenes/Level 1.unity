@@ -1887,7 +1887,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
 --- !u!1 &768231798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,15 +1906,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &768231799
-=======
---- !u!114 &640698887
->>>>>>> e46bac7074d977192cedc07529ce9b31b50ce05f
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 768231798}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1990,16 +1985,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
-  m_GameObject: {fileID: 640698883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d41f586091701f843b43f8603211b889, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerHealth: {fileID: 462912177}
-  damage: 1
->>>>>>> e46bac7074d977192cedc07529ce9b31b50ce05f
 --- !u!1 &1033980521
 GameObject:
   m_ObjectHideFlags: 0
