@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
     public float input1;
     
     public float TurningSpeed = 500;
-    #endregion
 
     Rigidbody2D rb;
 
