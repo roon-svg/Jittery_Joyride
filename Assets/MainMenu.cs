@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void Playgame()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadSceneAsync("2");
         // In the line above, we add the scene of the game, the first level where the game begins.
 
     }
