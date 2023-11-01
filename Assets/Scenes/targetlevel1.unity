@@ -2472,6 +2472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartCheckpoint: {fileID: 1624702810}
   EndCheckpoint: {fileID: 1796220769}
+  Player: {fileID: 462912171}
   countdownText: {fileID: 1524713648}
 --- !u!114 &1524713648
 MonoBehaviour:

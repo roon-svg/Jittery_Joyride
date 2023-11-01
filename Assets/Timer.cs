@@ -10,9 +10,9 @@ public class Timer : MonoBehaviour
     [SerializeField] GameObject StartCheckpoint;
     Ender ender;
     [SerializeField] GameObject EndCheckpoint;
+    [SerializeField] GameObject Player;
 
     public TextMeshProUGUI countdownText;
-    public string GameOver;
 
 
     // public float currentTime = 0f;
@@ -39,10 +39,10 @@ public class Timer : MonoBehaviour
             starter.countdownTimerStart = false;
 
         }
-        if (starter.currentTime < 0)
+        if (starter.currentTime <= 0)
         {
-            SceneManager.LoadScene(GameOver);
-            Destroy(gameObject);
+            //SceneManager.LoadScene(GameOver);
+            Destroy(Player);
         }
     }
 
