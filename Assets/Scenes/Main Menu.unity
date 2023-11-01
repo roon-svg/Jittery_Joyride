@@ -709,7 +709,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1048253932}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Playgame
+        m_MethodName: Loadgame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1479,6 +1479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc8f2dc8e59c3a4189aea0ed958682b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetlevel1: targetlevel1
 --- !u!114 &1048253933
 MonoBehaviour:
   m_ObjectHideFlags: 0

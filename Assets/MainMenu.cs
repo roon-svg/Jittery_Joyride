@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void Playgame()
+    public string targetlevel1;
+    public void Loadgame()
     {
-        SceneManager.LoadSceneAsync("2");
+        SceneManager.LoadScene(targetlevel1);
         // In the line above, we add the scene of the game, the first level where the game begins.
 
     }
