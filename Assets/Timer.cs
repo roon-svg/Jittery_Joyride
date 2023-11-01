@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class Timer : MonoBehaviour
     [SerializeField] GameObject EndCheckpoint;
 
     public TextMeshProUGUI countdownText;
-
+    public string GameOver;
 
 
     // public float currentTime = 0f;
@@ -40,7 +41,8 @@ public class Timer : MonoBehaviour
         }
         if (starter.currentTime < 0)
         {
-            // SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene(GameOver);
+            Destroy(gameObject);
         }
     }
 
