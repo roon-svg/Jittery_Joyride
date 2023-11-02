@@ -2603,7 +2603,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1819316273}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3252,6 +3252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkpointTime: 60
   Timerfiller: {fileID: 1161173979}
+  StartCheckpoint: {fileID: 1624702810}
 --- !u!1 &1697410227
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,4 +3877,4 @@ SceneRoots:
   - {fileID: 462912174}
   - {fileID: 1128141485}
   - {fileID: 768231801}
-  - {fileID: 1819316273}
+  - {fileID: 1524713646}
