@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(targetlevel1);
         // In the line above, we add the scene of the game, the first level where the game begins.
+        //Using this scene manager.load scene command, out first scene loads which is called "targetlevel1"
 
     }
     
