@@ -13,6 +13,7 @@ public class Ender : MonoBehaviour
     void OnTriggerEnter2D(Collider2D StartCheckpoint)
     {
         currentTime = 60f;
+        // This allows the timer to stop.
         countdownTimerStop = true;
     }
 }

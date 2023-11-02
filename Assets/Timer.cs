@@ -42,12 +42,14 @@ public class Timer : MonoBehaviour
         if (starter.currentTime <= 0)
         {
             //SceneManager.LoadScene(GameOver);
+            // This destroys the player when the timer hits zero
             Destroy(Player);
         }
     }
 
     public void UpdateTimer()
     {
+        // This allows for the timer to go down.
         float CountdownTimer = starter.currentTime -= Time.deltaTime;
         countdownText.text = CountdownTimer.ToString();
     }
