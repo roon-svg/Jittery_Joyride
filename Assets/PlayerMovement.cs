@@ -55,18 +55,13 @@ public class PlayerMovement : MonoBehaviour
             rb.MoveRotation(MoveRotation);
         }
         #endregion
-
-        if (speedBoost.boostOn == true && Input.GetKeyDown("space"))
+          // Gives a player a speedboost when coliding with a certain asset 
+        if (speedBoost.boostOn == true)
         {
-            transform.Translate(Direction * 50 * Magnitude * Time.deltaTime, Space.World);
-            Boost();
-            speedBoost.boostOn = false;
+            Speed = 10f; 
         }
     }
 
-    public void Boost()
-    {
-        Speed = 10f;
-    }
+    
 
 }
